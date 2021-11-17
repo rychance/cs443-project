@@ -1,0 +1,30 @@
+
+
+
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'login.css') }}">
+  <!-- <script src="{{ url_for('static', filename= 'app.js') }}"></script>
+  <script src="{{ url_for('static', filename= 'amazon-cognito-identity.min.js') }}"></script> -->
+</head>
+<body>
+  <main id="main-holder">
+    <h1 id="login-header"> Security Login</h1>
+      <div class="login-form">
+        <!-- <input type="text" name="username" id="username-field" class="username-password-field" placeholder="Email">
+        <input type="password" name="password" id="password-field" class="username-password-field" placeholder="Password"> -->
+      </div>
+      <form class="login-form" method="POST" action="/index" >
+        <input type="text" name="username" id="username-field" class="username-password-field" placeholder="Email">
+        <input type="password" name="password" id="password-field" class="username-password-field" placeholder="Password">
+        <input type="submit" value="Login" id="login-form-submit">
+        </form>
+      </div>
+    </form>
+    <form class="login-form" action="/signup" method="GET">
+      <input type="submit" value="Register" id="signin-form-submit">
+    </form>
+  </main>
+</body>
+</html>

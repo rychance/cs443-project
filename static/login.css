@@ -1,0 +1,62 @@
+html {
+  height: 100%;
+}
+
+html {
+  color: blue%;
+}
+
+body {
+  font-size: 100%;
+  color:#041e42;
+  height: 50%;
+  font-family: Hallo Sans;
+  display: grid;
+  justify-items: center;
+  padding: 100px;
+  align-items: center;
+  background-image: url(login-background.jpeg);
+}
+
+.login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+
+
+.username-password-field {
+  width: 180%;
+  height: 90%;
+  margin-bottom: 25px;
+  outline: 1px;
+  font-size: 100%;
+  padding: 0px 0px 5px 5px;
+}
+
+#main-holder {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+  padding-top: 20px;
+}
+
+#login-form-submit, #signin-form-submit {
+  font-size: 100%;
+  width: 150px;
+  padding: 20px;
+  color: black;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  background-color: lightblue;
+  font-family: Hallo Sans;
+  cursor: pointer;
+  box-shadow: 0 0 0 1pt #041e42;
+}

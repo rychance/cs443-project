@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Security Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'login.css') }}">
+  <script src="{{ url_for('static', filename= 'app.js') }}"></script>
+</head>
+<body>
+  <main id="main-holder">
+    <h1 id="login-header"> Security Login</h1>
+    <form class="login-form"  action="/accesscode" method= "POST">
+      <input type="text"  id="firstname" class="username-password-field" placeholder="Name" name="comname" required>
+      <input type="text"  id="lastname" class="username-password-field" placeholder="Email" name="comemail" required>
+      <input type="Integer"  id="email" class="username-password-field" placeholder="Phone Number" name="comphone" required>
+      <input type="password"  id="password" class="username-password-field" placeholder="Password" name="compassword" required>
+      <input type="submit" value="Submit"  id="login-form-submit">
+    </form>
+  </main>
+</body>
+</html>

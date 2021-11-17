@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sensor Security</title>
+<link rel="stylesheet" href="{{ url_for('static', filename= 'index.css') }}">
+</head>
+<body>
+<style>
+
+
+table, th, td {
+  border: 2px solid black;
+}
+th, td {
+  padding: 15px;
+  color:#041e42;
+}
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 75%;
+  box-shadow: 0 0 0 1pt #041e42;
+  margin-bottom: 5px;
+  background-color: lightblue;
+  font-family: Hallo Sans;
+  color:#041e42
+}
+}
+th {
+  background-color: #FFFF00;
+  color: black;
+}
+</style>
+
+  <ul>
+  <li><a href="{{ url_for('home') }}">Home</a></li>
+  <li><a class="active" href="#home">Contact Us</a></li>
+  <li><a href="{{ url_for('login') }}">Log Out</a></li>
+</ul>
+
+<table>
+<tr>
+  <th>Name</th>
+  <th>Email</th>
+</tr>
+<tr>
+  <td>Ryan Chancellor</td>
+  <td><a href = "mailto: chance03@uab.edu">School Email</a></td>
+</tr>
+<tr>
+  <td>Dawson Sargent</td>
+  <td><a href = "mailto: ahamil12@uab.edu">School Email</a></td>
+</tr>
+<tr>
+  <td>Alex Hamilton</td>
+  <td><a href = "mailto: dsar9901@uab.edu">School Email</a></td>
+</tr>
+<tr>
+  <td>Andrew Pham</td>
+  <td><a href = "mailto: apham186@uab.edu">School Email</a></td>
+</tr>
+<tr>
+  <td>Julian Currie</td>
+  <td><a href = "mailto: jccurrie@uab.edu">School Email</a></td>
+</tr>
+
+</table>
+
+
+</body>
+</html>

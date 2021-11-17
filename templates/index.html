@@ -1,0 +1,47 @@
+
+<!-- the navigation bar was from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sensor Security</title>
+<link rel="stylesheet" href="{{ url_for('static', filename= 'index.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="{{ url_for('static', filename= 'app.js') }}"></script>
+
+</head>
+<body>
+
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+  <li><a href="{{ url_for('login') }}">Log Out</a></li>
+</ul>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Door Sensor</div>
+        <!-- <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div> -->
+        <div class="panel-footer">Status</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Noise Sensor</div>
+        <!-- <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div> -->
+        <div class="panel-footer">Status</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">Window Sensor</div>
+        <!-- <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div> -->
+        <div class="panel-footer">Status</div>
+      </div>
+
+</body>
+</html>

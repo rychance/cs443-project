@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "amazon-cognito-identity-js": "^5.2.3",
+    "aws-sdk": "^2.1028.0",
+    "boto": "^0.0.1",
+    "boto3": "^0.0.1",
+    "dotenv": "^10.0.0"
+  }
+}

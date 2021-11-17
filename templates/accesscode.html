@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Access Code</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'login.css') }}">
+</head>
+<body>
+  <main id="main-holder">
+    <h1 id="login-header"> Enter Access Code</h1>
+      <form class="login-form" action="/login" method="POST" >
+        <input type="text" name="accesscode" id="username-field" class="username-password-field" placeholder="Access Code">
+        <input type="submit" value="Submit" id="login-form-submit">
+        </form>
+      </div>
+  </main>
+</body>
+</html>

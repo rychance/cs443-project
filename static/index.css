@@ -1,0 +1,105 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 3px solid #e7e7e7;
+  background-color: #f3f3f3;
+  font-family: Hallo Sans;
+  box-shadow: 0 0 0 1pt #041e42;
+  margin-bottom: 10px;
+}
+
+body{
+  background-image: url(login-background.jpeg);
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color: #041e42;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: #041e42;
+  background-color: lightblue;
+}
+#upper-left {
+  width: 40%;
+  height: 250px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+}
+#upper-right {
+  width: 40%;
+  height: 250px;
+  display: grid;
+  align-self: 100px;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+}
+#bottom-left {
+  width: 40%;
+  height: 250px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+}
+#bottom-right {
+  width: 40%;
+  height: 250px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+}
+
+table, th, td {
+  border: 2px solid black;
+
+}
+th, td {
+  padding: 15px;
+  color:#041e42;
+
+}
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 75%;
+  box-shadow: 0 0 0 1pt #041e42;
+  margin-bottom: 5px;
+  background-color: lightblue;
+  font-family: Hallo Sans;
+  color:#041e42
+}
+}
+th {
+  background-color: #FFFF00;
+  color: black;
+}
