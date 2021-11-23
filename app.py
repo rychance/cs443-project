@@ -40,14 +40,12 @@ def signup():
 # when you click the contact button after you log in
 @app.route('/contact', methods=['POST', 'GET'])
 def contact():
-    print(session['accesscode'])
     return render_template ('table.html')
 
 # when you click home button after you log in
 @app.route('/home', methods=['POST', 'GET'])
 def home():
     return render_template ('index.html')
-
 
 # gathers the information from the signup page and sends you to the access code page
 @app.route('/accesscode', methods=['POST', 'GET'])
@@ -76,13 +74,28 @@ def backtologin():
 #this function checks what you enter when you log in and compares the values to what they entered on signup
 @app.route('/index', methods=['POST', 'GET'])
 def index():
+    username = request.form.get("username")
+    password = request.form.get("password")
+    access = logIn(client, str(username), str(password))
 
-    # use this one
-    # it returns the index page which is the home page
+    # if logIn was successful return index view
+    if access == True:
+         return render_template ('index.html')
 
+# This function serves to log users in by verifying credentials match in cognito
+def logIn(client, username, password):
+    response = client.initiate_auth(
+        ClientId=os.getenv("COGNITO_USER_CLIENT_ID"),
+        AuthFlow="USER_PASSWORD_AUTH",
+        AuthParameters={"USERNAME": username, "PASSWORD": password},
+        )
+    access_token = response["AuthenticationResult"]["AccessToken"]
+    response = client.get_user(AccessToken=access_token)
 
+    # if response exists then the credentials matched in cognito and it is returned as True.
+    if response:
+        return True
 
-    return render_template ('index.html')
 
 # This function passes relevant info to cognito for user signup
 def signUp(client, username, password, email, phoneNumber):
